@@ -11,10 +11,9 @@ class Anagram
     array.each do |possible|
       pos_arr = possible.split("").sort 
       word_arr = @word.split("").sort 
-      binding.pry
       if word_arr == pos_arr
         match_arr << possible
-        
+        binding.pry
       end
     end
     match_arr
