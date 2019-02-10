@@ -13,7 +13,7 @@ class Anagram
       word_arr = @word.split("").sort 
       if word_arr == pos_arr
         match_arr << possible
-        binding.pry
+        #binding.pry
       end
     end
     match_arr
